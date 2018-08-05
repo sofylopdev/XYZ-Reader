@@ -1,0 +1,100 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/draw_insets_frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/photo_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_card_top_margin"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:expandedTitleMarginBottom="@dimen/expanded_title_margin"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <!--suppress AndroidLintContentDescription -->
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax" />
+
+            <include layout="@layout/metabar_textview"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_detail"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/ic_arrow_back" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:behavior_overlapTop="@dimen/detail_card_overlap"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.example.xyzreader.ui.MaxWidthLinearLayout
+            android:id="@+id/bodytextview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#FAFAFA"
+            android:elevation="@dimen/detail_card_elevation"
+            android:maxWidth="@dimen/detail_card_max_width"
+            android:orientation="vertical"
+            android:outlineProvider="bounds"
+            android:paddingBottom="@dimen/detail_metabar_vert_padding"
+            android:paddingLeft="@dimen/detail_inner_horiz_margin"
+            android:paddingRight="@dimen/detail_inner_horiz_margin"
+            android:paddingTop="@dimen/detail_metabar_vert_padding">
+
+            <TextView
+                android:id="@+id/article_body"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier"
+                android:maxLines="50"
+                android:paddingBottom="16dp"
+                android:textColor="@color/ltgray"
+                android:textColorLink="@color/theme_accent"
+                android:textSize="@dimen/detail_body_text_size"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/button_load_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/detail_body_bottom_margin"
+                android:background="@drawable/baseline_expand_more_black_24dp"
+                android:tag="@string/not_expanded" />
+        </com.example.xyzreader.ui.MaxWidthLinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/share_fab"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:contentDescription="@string/action_share"
+        android:src="@drawable/ic_share"
+        android:stateListAnimator="@anim/fab_state_list_anim" />
+</android.support.design.widget.CoordinatorLayout>

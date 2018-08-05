@@ -1,0 +1,10 @@
+<resources>
+    <bool name="has_space_for_title">true</bool>
+    <bool name="is_landscape">true</bool>
+
+    <!-- detail -->
+    <dimen name="detail_photo_height">224dp</dimen>
+    <dimen name="detail_inner_horiz_margin">112dp</dimen>
+    <integer name="list_column_count">2</integer>
+
+</resources>

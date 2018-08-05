@@ -1,0 +1,15 @@
+<resources>
+    <bool name="has_space_for_title">true</bool>
+    <bool name="is_landscape">true</bool>
+
+    <!-- detail -->
+    <bool name="detail_is_card">true</bool>
+
+    <dimen name="detail_photo_height">600dp</dimen>
+    <dimen name="detail_card_top_margin">256dp</dimen>
+
+    <integer name="list_column_count">3</integer>
+
+    <dimen name="expanded_title_margin">32dp</dimen>
+    <dimen name="padding_metabar">0dp</dimen>
+</resources>
