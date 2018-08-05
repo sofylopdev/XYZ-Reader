@@ -48,15 +48,15 @@ Your job will be to take the user feedback in the UI Review node, and implement 
 
 |Main Activity| Details Activity | Show More|
 | --- | --- | ---|
-| ![alt text](https://github.com/sofylopdev/XYZ-Reader/blob/master/MainActivity.png) | ![alt text](https://github.com/sofylopdev//XYZ-Reader/blob/master/DetailsActivity.png) | ![alt text](https://github.com/sofylopdev//XYZ-Reader/blob/master/ShowMore.png) |
+| ![alt text](https://github.com/sofylopdev/XYZ-Reader/blob/master/MainActivity.png) | ![alt text](https://github.com/sofylopdev/XYZ-Reader/blob/master/DetailsActivity.png) | ![alt text](https://github.com/sofylopdev/XYZ-Reader/blob/master/ShowMore.png) |
 
 |Landscape Main| Landscape Details | 
 | --- | --- | 
-| ![alt text](https://github.com/sofylopdev/XYZ-Reader/blob/master/LandscapeMain.png) | ![alt text](https://github.com/sofylopdev//XYZ-Reader/blob/master/LandscapeDetails.png) |
+| ![alt text](https://github.com/sofylopdev/XYZ-Reader/blob/master/LandscapeMain.png) | ![alt text](https://github.com/sofylopdev/XYZ-Reader/blob/master/LandscapeDetails.png) |
 
 |Tablet Main| Tablet Details | 
 | --- | --- | 
-| ![alt text](https://github.com/sofylopdev/XYZ-Reader/blob/master/TabletMain.png) | ![alt text](https://github.com/sofylopdev//XYZ-Reader/blob/master/TabletDetails.png) |
+| ![alt text](https://github.com/sofylopdev/XYZ-Reader/blob/master/TabletMain.png) | ![alt text](https://github.com/sofylopdev/XYZ-Reader/blob/master/TabletDetails.png) |
 
 
 ## License
